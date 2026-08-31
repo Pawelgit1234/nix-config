@@ -1,8 +1,6 @@
 { pkgs, ... }:
 
 {
-
-  # == Zsh ==
   programs.zsh = {
     enable = true;
 

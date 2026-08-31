@@ -5,9 +5,9 @@
     jetbrains-mono
     nerd-fonts.jetbrains-mono
 
+    tree
     fzf
     zoxide
     fastfetch
-    neovim
   ];
 }
