@@ -1,5 +1,5 @@
 {
-  description = "My Nix and Home-Manager Config";
+  description = "My Nix Config";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
@@ -26,7 +26,7 @@
 
         modules = [
           nixvim.homeModules.nixvim
-          ./home.nix
+          ./hosts/jim/home.nix
         ];
       };
     };

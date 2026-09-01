@@ -13,6 +13,7 @@
     historyLimit = 50000;
     clock24 = true;
     baseIndex = 1;
+    keyMode = "vi";
 
     extraConfig = ''
       set -g automatic-rename on
@@ -31,9 +32,6 @@
       set -ag status-right "#{E:@catppuccin_status_uptime}"
 
       run-shell ${pkgs.tmuxPlugins.cpu}/share/tmux-plugins/cpu/cpu.tmux
-
-      # set vi-mode
-      set-window-option -g mode-keys vi
 
       # keybindings
       bind-key -T copy-mode-vi v send-keys -X begin-selection
