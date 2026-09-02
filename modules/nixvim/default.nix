@@ -14,14 +14,14 @@
 # NixVim отмечает этот механизм как экспериментальный, поэтому для начала я бы не пытался лениво грузить вообще всё подряд.
 
 # UI
-#├── Catppuccin
-#├── lualine
-#├── bufferline
+#├── Catppuccin # проверить, оно вообще сделалось?
+#├── lualine >
+#├── bufferline >
 #├── which-key
-#└── dashboard/Snacks dashboard
+#└── dashboard >
 #
 #Navigation
-#├── Telescope
+#├── Telescope + whick-key
 #├── Neo-tree/Snacks explorer
 #└── Harpoon
 #
@@ -51,25 +51,13 @@
 #└── Bash
 # + js, ts, html, css, java
 
+# добавить везде which-key поддержку, где надо
 # посмотреть в obsidian на счёт предустановленных lazyvim плагинов
-
-#    ├── core.nix
-#    ├── ui.nix
-#    ├── editor.nix
-#    ├── lsp.nix
-#    ├── git.nix
-#    ├── keymaps.nix
-#    │
-#    └── languages/
-#        ├── python.nix
-#        ├── rust.nix
-#        ├── cpp.nix
-#        ├── nix.nix
-#        └── lua.nix
-
 
 # https://github.com/dc-tec/nixvim у него списывать
 # https://github.com/spector700/Akari/
+
+# автосохранение кода
 
 { ... }:
 

@@ -40,6 +40,8 @@
       scrolloff = 8;
 
       colorcolumn = "79";
+
+      mouse = "";
     };
 
     colorschemes.catppuccin = {
