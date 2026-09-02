@@ -7,18 +7,13 @@
   programs.home-manager.enable = true;
 
   home.packages = with pkgs; [
-    jetbrains-mono
-    nerd-fonts.jetbrains-mono
-
     tree
     fzf
     zoxide
     fastfetch
-    yt-dlp
   ];
 
   imports = [
-    ../../modules/alacritty.nix
     ../../modules/zsh
     ../../modules/tmux.nix
     ../../modules/nixvim

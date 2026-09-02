@@ -15,19 +15,38 @@
   };
 
   outputs =
-    { nixpkgs, home-manager, nixvim, ... }:
+    {
+      nixpkgs,
+      home-manager,
+      nixvim,
+      ...
+    }:
     let
       system = "x86_64-linux";
+
       pkgs = nixpkgs.legacyPackages.${system};
+
+      mkHome =
+        module:
+        home-manager.lib.homeManagerConfiguration {
+          inherit pkgs;
+
+          modules = [
+            nixvim.homeModules.nixvim
+            module
+          ];
+        };
     in
     {
-      homeConfigurations."jim" = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
+      homeConfigurations = {
+        # main pc (ubuntu)
+        jim = mkHome ./hosts/jim/home.nix;
 
-        modules = [
-          nixvim.homeModules.nixvim
-          ./hosts/jim/home.nix
-        ];
+        # iSH on iPad
+        ish = mkHome ./hosts/ish/home.nix;
+
+        # Default configuration
+        default = mkHome ./hosts/jim/home.nix;
       };
     };
 }

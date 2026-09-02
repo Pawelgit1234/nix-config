@@ -16,6 +16,8 @@
     keyMode = "vi";
 
     extraConfig = ''
+      set -as terminal-features ",*:RGB"
+
       set -g automatic-rename on
       set -g automatic-rename-format '#{pane_current_command}'
 
