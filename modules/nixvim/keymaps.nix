@@ -3,6 +3,63 @@
 {
   programs.nixvim.keymaps =
     [
+      # == Telescope ==
+      {
+        mode = "n";
+        key = "<leader>ff";
+        action = "<cmd>Telescope find_files<CR>";
+        options.desc = "Find files";
+      }
+
+      {
+        mode = "n";
+        key = "<leader>fg";
+        action = "<cmd>Telescope live_grep<CR>";
+        options.desc = "Live grep";
+      }
+
+      {
+        mode = "n";
+        key = "<leader>fb";
+        action = "<cmd>Telescope buffers<CR>";
+        options.desc = "Find buffers";
+      }
+
+      {
+        mode = "n";
+        key = "<leader>fr";
+        action = "<cmd>Telescope oldfiles<CR>";
+        options.desc = "Recent files";
+      }
+
+      {
+        mode = "n";
+        key = "<leader>fh";
+        action = "<cmd>Telescope help_tags<CR>";
+        options.desc = "Search help";
+      }
+
+      {
+        mode = "n";
+        key = "<leader>fk";
+        action = "<cmd>Telescope keymaps<CR>";
+        options.desc = "Search keymaps";
+      }
+
+      {
+        mode = "n";
+        key = "<leader>fc";
+        action = "<cmd>Telescope commands<CR>";
+        options.desc = "Search commands";
+      }
+
+      {
+        mode = "n";
+        key = "<leader>ft";
+        action = "<cmd>Telescope git_files<CR>";
+        options.desc = "Git files";
+      }
+
       # == Bufferline ==
       {
         mode = "n";
@@ -62,5 +119,4 @@
       })
       9;
     
-    # ==  ==
 }

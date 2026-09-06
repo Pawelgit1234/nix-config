@@ -14,14 +14,14 @@
 # NixVim отмечает этот механизм как экспериментальный, поэтому для начала я бы не пытался лениво грузить вообще всё подряд.
 
 # UI
-#├── Catppuccin # проверить, оно вообще сделалось?
+#├── Catppuccin >
 #├── lualine >
 #├── bufferline >
-#├── which-key
+#├── which-key >
 #└── dashboard >
 #
 #Navigation
-#├── Telescope + whick-key
+#├── Telescope + whick-key >
 #├── Neo-tree/Snacks explorer
 #└── Harpoon
 #
@@ -57,7 +57,7 @@
 # https://github.com/dc-tec/nixvim у него списывать
 # https://github.com/spector700/Akari/
 
-# автосохранение кода
+# автосохранение кода и ctrl +s
 
 { ... }:
 

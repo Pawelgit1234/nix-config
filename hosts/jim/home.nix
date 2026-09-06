@@ -15,6 +15,9 @@
     zoxide
     fastfetch
     yt-dlp
+    uv
+    ruff
+    ripgrep
   ];
 
   imports = [

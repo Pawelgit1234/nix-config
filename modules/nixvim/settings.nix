@@ -13,6 +13,10 @@
     };
 
     opts = {
+      showmode = false;
+      ruler = false;
+      laststatus = 3;
+
       number = true;
       relativenumber = true;
 
@@ -43,14 +47,5 @@
 
       mouse = "";
     };
-
-    colorschemes.catppuccin = {
-      enable = true;
-
-      settings = {
-        flavour = "mocha";
-      };
-    };
-
   };
 }

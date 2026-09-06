@@ -1,13 +1,5 @@
 { ... }:
 
-# numbers (у каждого таба свой номер)
-# unique names (если два файла с одинаковым именем, то пишется рядом ещё и директория)
-# hotkeys
-#  возможность менять их местами через клавиши
-#  закрыть буфер
-#  перемещатся влево/вправо по буферам
-#  прыгать по номерам (id)
-
 {
   programs.nixvim.plugins.bufferline = {
     enable = true;
@@ -19,8 +11,6 @@
     settings = {
       options = {
         mode = "buffers";
-
-        separator_style = "slant";
 
         always_show_bufferline = true;
 

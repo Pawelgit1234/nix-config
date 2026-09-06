@@ -14,6 +14,10 @@
           __unkeyed-1 = "<leader>b";
           group = "Buffers";
         }
+        {
+          __unkeyed-2 = "<leader>f";
+          group = "Telescope";
+        }
       ];
     };
   };
