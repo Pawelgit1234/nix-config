@@ -4,6 +4,10 @@
   programs.nixvim.plugins.neo-tree = {
     enable = true;
 
+    lazyLoad.settings = {
+      cmd = "Neotree";
+    };
+
     settings = {
       close_if_last_window = true;
 
@@ -25,6 +29,11 @@
       window = {
         position = "left";
         width = 30;
+
+        mappings = {
+          "h" = "close_node";
+          "l" = "open";
+        };
       };
     };
   };

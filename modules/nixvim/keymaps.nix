@@ -60,6 +60,23 @@
         options.desc = "Git files";
       }
 
+      # == Neo-Tree ==
+      {
+        mode = "n";
+        key = "<leader>e";
+        action = "<cmd>Neotree toggle<CR>";
+
+        options.desc = "Toggle file explorer";
+      }
+
+      {
+        mode = "n";
+        key = "<leader>o";
+        action = "<cmd>Neotree focus<CR>";
+
+        options.desc = "Focus file explorer";
+      }
+
       # == Bufferline ==
       {
         mode = "n";

@@ -22,7 +22,7 @@
 #
 #Navigation
 #├── Telescope + whick-key >
-#├── Neo-tree/Snacks explorer
+#├── Neo-tree explorer >
 #└── Harpoon
 #
 #Editing
