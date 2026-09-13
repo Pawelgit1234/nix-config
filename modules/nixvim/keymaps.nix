@@ -217,6 +217,21 @@
         options.desc = "Swap parameter backward";
       }
 
+      # == Todo-Comments ==
+      {
+        mode = "n";
+        key = "]t";
+        action = "<cmd>lua require('todo-comments').jump_next()<CR>";
+        options.desc = "Next todo comment";
+      }
+
+      {
+        mode = "n";
+        key = "[t";
+        action = "<cmd>lua require('todo-comments').jump_prev()<CR>";
+        options.desc = "Previous todo comment";
+      }
+
       # == Bufferline ==
       {
         mode = "n";

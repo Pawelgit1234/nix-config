@@ -27,8 +27,8 @@
 #Editing
 #├── Treesitter >
 #├── Comment > 
-#├── Autopairs
-#├── Surround
+#├── Autopairs >
+#├── Surround >
 #└── Todo-comments
 #
 #LSP
