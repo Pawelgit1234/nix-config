@@ -29,7 +29,7 @@
 #├── Comment > 
 #├── Autopairs >
 #├── Surround >
-#└── Todo-comments
+#└── Todo-comments >
 #
 #LSP
 #├── nvim-lspconfig

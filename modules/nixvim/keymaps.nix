@@ -232,6 +232,99 @@
         options.desc = "Previous todo comment";
       }
 
+      # == LSP ==
+      {
+        mode = "n";
+        key = "gd";
+        action = "<cmd>lua vim.lsp.buf.definition()<CR>";
+        options.desc = "Go to definition";
+      }
+
+      {
+        mode = "n";
+        key = "gD";
+        action = "<cmd>lua vim.lsp.buf.declaration()<CR>";
+        options.desc = "Go to declaration";
+      }
+
+      {
+        mode = "n";
+        key = "gr";
+        action = "<cmd>lua vim.lsp.buf.references()<CR>";
+        options.desc = "Show references";
+      }
+
+      {
+        mode = "n";
+        key = "gi";
+        action = "<cmd>lua vim.lsp.buf.implementation()<CR>";
+        options.desc = "Go to implementation";
+      }
+
+      {
+        mode = "n";
+        key = "K";
+        action = "<cmd>lua vim.lsp.buf.hover()<CR>";
+        options.desc = "Show documentation";
+      }
+
+      {
+        mode = "n";
+        key = "<C-k>";
+        action = "<cmd>lua vim.lsp.buf.signature_help()<CR>";
+        options.desc = "Show signature help";
+      }
+
+      {
+        mode = "n";
+        key = "<leader>rn";
+        action = "<cmd>lua vim.lsp.buf.rename()<CR>";
+        options.desc = "Rename symbol";
+      }
+
+      {
+        mode = [ "n" "v" ];
+        key = "<leader>ca";
+        action = "<cmd>lua vim.lsp.buf.code_action()<CR>";
+        options.desc = "Code action";
+      }
+
+      {
+        mode = "n";
+        key = "<leader>F";
+        action = "<cmd>lua vim.lsp.buf.format()<CR>";
+        options.desc = "Format buffer";
+      }
+
+      # LSP Diagnostics
+      {
+        mode = "n";
+        key = "<leader>d";
+        action = "<cmd>lua vim.diagnostic.open_float()<CR>";
+        options.desc = "Show diagnostic";
+      }
+
+      {
+        mode = "n";
+        key = "]d";
+        action = "<cmd>lua vim.diagnostic.goto_next()<CR>";
+        options.desc = "Next diagnostic";
+      }
+
+      {
+        mode = "n";
+        key = "[d";
+        action = "<cmd>lua vim.diagnostic.goto_prev()<CR>";
+        options.desc = "Previous diagnostic";
+      }
+
+      {
+        mode = "n";
+        key = "<leader>q";
+        action = "<cmd>lua vim.diagnostic.setloclist()<CR>";
+        options.desc = "Diagnostics list";
+      }
+
       # == Bufferline ==
       {
         mode = "n";
