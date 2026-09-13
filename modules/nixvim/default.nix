@@ -26,7 +26,7 @@
 #
 #Editing
 #├── Treesitter >
-#├── Comment
+#├── Comment > 
 #├── Autopairs
 #├── Surround
 #└── Todo-comments
