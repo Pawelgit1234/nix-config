@@ -289,13 +289,6 @@
         options.desc = "Code action";
       }
 
-      {
-        mode = "n";
-        key = "<leader>F";
-        action = "<cmd>lua vim.lsp.buf.format()<CR>";
-        options.desc = "Format buffer";
-      }
-
       # LSP Diagnostics
       {
         mode = "n";
@@ -323,6 +316,14 @@
         key = "<leader>q";
         action = "<cmd>lua vim.diagnostic.setloclist()<CR>";
         options.desc = "Diagnostics list";
+      }
+
+      # == Conform ==
+      {
+        mode = [ "n" "v" ];
+        key = "<leader>F";
+        action = "<cmd>lua require('conform').format({ async = true, lsp_format = 'fallback' })<CR>";
+        options.desc = "Format buffer";
       }
 
       # == Bufferline ==

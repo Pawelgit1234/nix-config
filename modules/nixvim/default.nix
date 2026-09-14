@@ -32,8 +32,8 @@
 #└── Todo-comments >
 #
 #LSP
-#├── nvim-lspconfig
-#├── blink.cmp
+#├── nvim-lspconfig > 
+#├── blink.cmp >
 #└── conform.nvim
 #
 #Git

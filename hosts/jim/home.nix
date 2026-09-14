@@ -13,11 +13,16 @@
     tree
     fzf
     zoxide
+    ripgrep
     fastfetch
     yt-dlp
+
     uv
+
     ruff
-    ripgrep
+    rustfmt
+    prettier
+    clang-tools
   ];
 
   imports = [
