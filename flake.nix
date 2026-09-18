@@ -45,6 +45,9 @@
         # iSH on iPad
         ish = mkHome ./hosts/ish/home.nix;
 
+        # pawel (ubuntu server)
+        pawel = mkHome ./hosts/pawel/home.nix;
+
         # Default configuration
         default = mkHome ./hosts/jim/home.nix;
       };

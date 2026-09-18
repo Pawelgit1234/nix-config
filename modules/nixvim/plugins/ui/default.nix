@@ -7,5 +7,6 @@
         ./bufferline.nix
         ./which-key.nix
         ./colorscheme.nix
+        ./web-devicons.nix
     ];
 }

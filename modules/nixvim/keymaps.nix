@@ -329,16 +329,9 @@
       # == Trouble ==
       {
         mode = "n";
-        key = "<leader>xx";
+        key = "<leader>x";
         action = "<cmd>Trouble diagnostics toggle<CR>";
         options.desc = "Toggle diagnostics";
-      }
-
-      {
-        mode = "n";
-        key = "<leader>xX";
-        action = "<cmd>Trouble diagnostics toggle filter.buf=0<CR>";
-        options.desc = "Buffer diagnostics";
       }
 
       # == Bufferline ==

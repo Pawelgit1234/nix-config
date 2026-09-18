@@ -38,21 +38,19 @@
 
 # illuminate >
 # indent-blankline >
+# trouble >
+# web-devicions >
+
+# mini ? => просмотерть список и понять, надо ли оно вообще
+
 # luasnip, friendly-snippets ?
-# mini
-# obsidian.nix ?
-# trouble
-# web-devicions ?
 # flash.nvim ?
-# noice?
-# nui.nvim ?
 # grug-far.nvim    ?
 # nvim-lint        ?
-# nvim-lspconfig   ?
 # nvim-ts-autotag  ?
 # persistance-nvim ?
-# plenary.nvim     ?
-# navigation => harpoon всё же попробвать => нужен ли bufferline?
+# harpoon всё же попробвать => нужен ли bufferline?
+# obsidian, хотя бы для берлина
 
 # точно ли мне нужны гитплагины?
 
