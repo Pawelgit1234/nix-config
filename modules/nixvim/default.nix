@@ -34,39 +34,48 @@
 #LSP
 #├── nvim-lspconfig > 
 #├── blink.cmp >
-#└── conform.nvim
-#
-#Git
-#├── Gitsigns
-#└── Lazygit integration
-#
-#Languages
-#├── Python
-#├── Rust
-#├── C
-#├── C++
-#├── Nix
-#├── Lua
-#└── Bash
-# + js, ts, html, css, java
+#└── conform.nvim >
 
+# illuminate >
+# indent-blankline
+# navic
+# undotree
+# fidget
+# luasnip, friendly-snippets ?
+# md-render
+# mini
+# obsidian.nix ?
+# overseer
+# trouble
+# web-devicions ?
+# flash.nvim ?
+# noice?
+# nui.nvim ?
+# grug-far.nvim    ?
+# nvim-lint        ?
+# nvim-lspconfig   ?
+# nvim-ts-autotag  ?
+# persistance-nvim ?
+# plenary.nvim     ?
 # navigation => harpoon всё же попробвать => нужен ли bufferline?
+
+# точно ли мне нужны гитплагины?
+
+# возможность прокручивать дальше, чему идут строки кода
 
 # все файлы на верхнев уровне (auto_cmds.nix, file_types.nix, итд.)
 
 # посмотреть списки плагинов + посмотреть, что используют в уже сконфигурированых примерах nix vim
 
 # добавить везде which-key поддержку, где надо
-# посмотреть в obsidian на счёт предустановленных lazyvim плагинов
+
+# посмотерть на ютубе и в итнернете, что люди используют
 
 # https://github.com/dc-tec/nixvim у него списывать
 # https://github.com/spector700/Akari/
 
-# автосохранение кода и ctrl +s
-
-# узнать:
-# - клавиши treesitter
-# - клавиши neo-tree (создать файл, папку, переименовать итд.)
+# автосохранение кода ?
+# ctrl +s
 
 { ... }:
 

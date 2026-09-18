@@ -48,7 +48,7 @@
           }
         ];
 
-        footer = [" Made by Pawelgit1234/Jim"];
+        footer = [" Made by Pawelgit1234"];
 
         vertical_center = true;
       };

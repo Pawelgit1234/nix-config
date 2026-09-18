@@ -11,6 +11,18 @@
     # Rust
     rust_analyzer.enable = true;
 
+    # C / C++
+    clangd.enable = true;
+
+    # Nix
+    nil_ls.enable = true;
+
+    # Lua
+    lua_ls.enable = true;
+
+    # Bash
+    bashls.enable = true;
+
     # JavaScript / TypeScript
     ts_ls.enable = true;
 
@@ -20,7 +32,7 @@
     # CSS / SCSS
     cssls.enable = true;
 
-    # C / C++
-    clangd.enable = true;
+    # Java
+    jdtls.enable = true;
   };
 }
