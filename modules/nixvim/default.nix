@@ -37,15 +37,10 @@
 #└── conform.nvim >
 
 # illuminate >
-# indent-blankline
-# navic
-# undotree
-# fidget
+# indent-blankline >
 # luasnip, friendly-snippets ?
-# md-render
 # mini
 # obsidian.nix ?
-# overseer
 # trouble
 # web-devicions ?
 # flash.nvim ?

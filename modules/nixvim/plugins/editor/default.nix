@@ -8,6 +8,7 @@
         ./surround.nix
         ./todo-comments.nix
         ./illuminate.nix
-        ./indent_blankline.nix
+        ./indent-blankline.nix
+        ./trouble.nix
     ];
 }
