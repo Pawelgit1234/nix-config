@@ -12,5 +12,6 @@
         ./trouble.nix
         ./flash.nix
         ./ts-autotag.nix
+        ./harpoon.nix
     ];
 }

@@ -41,30 +41,21 @@
 # web-devicions >
 # flash.nvim >
 # nvim-ts-autotag >
-# obsidian, хотя бы для берлина >
-# md-render
+# obsidian>
+# harpoon всё же попробвать => нужен ли bufferline?>
 
-# grug-far.nvim    ?
-# harpoon всё же попробвать => нужен ли bufferline?
-# persistance-nvim => нужен ли? если нет, то удалить
-
-# точно ли мне нужны гитплагины?
-
-# возможность прокручивать дальше, чему идут строки кода
-
-# все файлы на верхнев уровне (auto_cmds.nix, file_types.nix, итд.)
-
-# посмотреть списки плагинов + посмотреть, что используют в уже сконфигурированых примерах nix vim
-
-# добавить везде which-key поддержку, где надо
-
+# посмотреть списки плагинов
 # посмотерть на ютубе и в итнернете, что люди используют
-
 # https://github.com/dc-tec/nixvim у него списывать
 # https://github.com/spector700/Akari/
 
+# visual marks ?
+
+# добавить везде which-key поддержку, где надо
+# lazyloading
+
 # автосохранение кода ?
-# ctrl +s
+# ctrl +s ?
 
 { ... }:
 
@@ -72,8 +63,6 @@
   imports = [
     ./settings.nix
     ./keymaps.nix
-    ./auto_cmds.nix
-    ./file_types.nix
     ./plugins
   ];
 }
