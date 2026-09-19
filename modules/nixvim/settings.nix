@@ -17,6 +17,8 @@
       ruler = false;
       laststatus = 3;
 
+      conceallevel = 2;
+
       number = true;
       relativenumber = true;
 

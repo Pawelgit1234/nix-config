@@ -37,20 +37,16 @@
 #└── conform.nvim >
 
 # illuminate >
-# indent-blankline >
 # trouble >
 # web-devicions >
+# flash.nvim >
+# nvim-ts-autotag >
+# obsidian, хотя бы для берлина >
+# md-render
 
-# mini ? => просмотерть список и понять, надо ли оно вообще
-
-# luasnip, friendly-snippets ?
-# flash.nvim ?
 # grug-far.nvim    ?
-# nvim-lint        ?
-# nvim-ts-autotag  ?
-# persistance-nvim ?
 # harpoon всё же попробвать => нужен ли bufferline?
-# obsidian, хотя бы для берлина
+# persistance-nvim => нужен ли? если нет, то удалить
 
 # точно ли мне нужны гитплагины?
 

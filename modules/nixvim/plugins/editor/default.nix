@@ -10,5 +10,7 @@
         ./illuminate.nix
         ./indent-blankline.nix
         ./trouble.nix
+        ./flash.nix
+        ./ts-autotag.nix
     ];
 }

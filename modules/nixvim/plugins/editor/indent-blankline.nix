@@ -10,6 +10,11 @@
         show_exact_scope = true;
         show_start = false;
       };
+      exclude = {
+        filetypes = [
+          "dashboard"
+        ];
+      };
     };
   };
 }
