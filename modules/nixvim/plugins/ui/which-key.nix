@@ -18,6 +18,10 @@
           __unkeyed-2 = "<leader>f";
           group = "Telescope";
         }
+        { 
+          __unkeyed-3 = "<leader>h";
+          group = "Harpoon";
+        }
       ];
     };
   };

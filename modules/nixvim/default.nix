@@ -42,21 +42,20 @@
 # nvim-ts-autotag >
 # obsidian>
 # harpoon всё же попробвать => нужен ли bufferline?>
+# fidget >
+# colorizer >
+# treesj >
 
 # посмотреть списки плагинов >
 # посмотерть на ютубе и в итнернете, что люди используют >
 # https://github.com/dc-tec/nixvim у него списывать
 # https://github.com/spector700/Akari/
 
-# fidget >
-# colorizer >
-# treesj >
 
-# добавить везде which-key поддержку
+# добавить везде which-key поддержку >
 # lazyloading
 
-# автосохранение кода ?
-# ctrl +s ?
+# автосохранение кода >
 
 { ... }:
 
@@ -65,5 +64,6 @@
     ./settings.nix
     ./keymaps.nix
     ./plugins
+    ./autocmd.nix
   ];
 }

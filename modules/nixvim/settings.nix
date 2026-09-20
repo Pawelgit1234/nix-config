@@ -48,6 +48,8 @@
       colorcolumn = "79";
 
       mouse = "";
+
+      clipboard = "unnamedplus";
     };
   };
 }
