@@ -2,7 +2,7 @@
 
 {
   programs.nixvim.plugins.bufferline = {
-    enable = false; # disabled
+    enable = true;
 
     lazyLoad.settings = {
       event = "UIEnter";

@@ -4,12 +4,11 @@
 # мне же не нужно прям название
 # лучше анимацию пончика https://www.asciiart.eu/animations/ascii-spinning-donut
 
-
 # https://chatgpt.com/c/6a945583-09bc-83eb-919e-7b5f02dcebd3
 # Без lazy.nvim как менеджера плагинов.
-# 
+#
 # А для lazy loading использовать встроенный механизм NixVim.
-# 
+#
 # Сейчас NixVim поддерживает lazy-loading через lz.n, а его собственная документация прямо говорит, что это текущий поддерживаемый lazy-loading provider.
 # NixVim отмечает этот механизм как экспериментальный, поэтому для начала я бы не пытался лениво грузить вообще всё подряд.
 
@@ -26,13 +25,13 @@
 #
 #Editing
 #├── Treesitter >
-#├── Comment > 
+#├── Comment >
 #├── Autopairs >
 #├── Surround >
 #└── Todo-comments >
 #
 #LSP
-#├── nvim-lspconfig > 
+#├── nvim-lspconfig >
 #├── blink.cmp >
 #└── conform.nvim >
 
@@ -44,14 +43,16 @@
 # obsidian>
 # harpoon всё же попробвать => нужен ли bufferline?>
 
-# посмотреть списки плагинов
-# посмотерть на ютубе и в итнернете, что люди используют
+# посмотреть списки плагинов >
+# посмотерть на ютубе и в итнернете, что люди используют >
 # https://github.com/dc-tec/nixvim у него списывать
 # https://github.com/spector700/Akari/
 
-# visual marks ?
+# fidget >
+# colorizer >
+# treesj >
 
-# добавить везде which-key поддержку, где надо
+# добавить везде which-key поддержку
 # lazyloading
 
 # автосохранение кода ?

@@ -1,12 +1,13 @@
 { ... }:
 
 {
-    imports = [
-        ./dashboard.nix
-        ./lualine.nix
-        ./bufferline.nix
-        ./which-key.nix
-        ./colorscheme.nix
-        ./web-devicons.nix
-    ];
+  imports = [
+    ./dashboard.nix
+    ./lualine.nix
+    ./which-key.nix
+    ./colorscheme.nix
+    ./web-devicons.nix
+    ./fidget.nix
+  ];
 }
+
