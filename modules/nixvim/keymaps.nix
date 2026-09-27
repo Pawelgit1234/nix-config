@@ -99,6 +99,7 @@
         action = "<cmd>lua require('nvim-treesitter-textobjects.select').select_textobject('@parameter.outer', 'textobjects')<CR>";
         options.desc = "Select parameter outer";
       }
+
       {
         mode = [ "x" "o" ];
         key = "ia";
@@ -112,6 +113,7 @@
         action = "<cmd>lua require('nvim-treesitter-textobjects.select').select_textobject('@function.outer', 'textobjects')<CR>";
         options.desc = "Select function outer";
       }
+
       {
         mode = [ "x" "o" ];
         key = "if";
@@ -165,6 +167,20 @@
         options.desc = "Select comment";
       }
 
+      # Treesitter incremental selection
+      {
+        mode = ["x" "n"];
+        key = "<C-i>";
+        action = "<cmd>lua vim.treesitter.select('parent')<CR>";
+        options.desc = "Increment Treesitter selection";
+      }
+
+      {
+        mode = "x";
+        key = "<C-h>";
+        action = "<cmd>lua vim.treesitter.select('child')<CR>";
+        options.desc = "Decrement Treesitter selection";
+      }
 
       # Treesitter textobjects: move
       {
@@ -361,6 +377,21 @@
         key = "S";
         action = "<cmd>lua require('flash').treesitter()<CR>";
         options.desc = "Flash Treesitter";
+      }
+      
+      # Treesj
+      {
+        mode = "n";
+        key = "<leader>m";
+        action = "<cmd>TSJToggle<CR>";
+        options.desc = "Toggle split/join";
+      }
+
+      {
+        mode = "v";
+        key = "<leader>m";
+        action = "<cmd>TSJToggle<CR>";
+        options.desc = "Toggle split/join";
       }
 
       # == Bufferline ==
