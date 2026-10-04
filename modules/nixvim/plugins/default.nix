@@ -8,6 +8,6 @@
         ./lsp
         ./utils
 
-        ./lz-n.nix
+        ./cellular-automaton.nix
     ];
 }

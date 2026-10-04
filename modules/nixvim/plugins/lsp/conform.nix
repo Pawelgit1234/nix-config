@@ -47,4 +47,13 @@
       notify_on_error = true;
     };
   };
+
+  programs.nixvim.keymaps = [
+    {
+      mode = [ "n" "v" ];
+      key = "<leader>F";
+      action = "<cmd>lua require('conform').format({ async = true, lsp_format = 'fallback' })<CR>";
+      options.desc = "Format buffer";
+    }
+  ];
 }

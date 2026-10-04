@@ -4,10 +4,6 @@
   programs.nixvim.plugins.dashboard = {
     enable = true;
 
-    lazyLoad.settings = {
-        event = "VimEnter";
-    };
-
     settings = {
       theme = "doom";
 

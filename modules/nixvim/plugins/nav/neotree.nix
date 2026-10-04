@@ -4,10 +4,6 @@
   programs.nixvim.plugins.neo-tree = {
     enable = true;
 
-    lazyLoad.settings = {
-      cmd = "Neotree";
-    };
-
     settings = {
       close_if_last_window = true;
 
@@ -37,4 +33,20 @@
       };
     };
   };
+
+  programs.nixvim.keymaps = [
+    {
+      mode = "n";
+      key = "<leader>e";
+      action = "<cmd>Neotree toggle<CR>";
+      options.desc = "Toggle file explorer";
+    }
+
+    {
+      mode = "n";
+      key = "<leader>o";
+      action = "<cmd>Neotree focus<CR>";
+      options.desc = "Focus file explorer";
+    }
+  ];
 }

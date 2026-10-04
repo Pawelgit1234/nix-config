@@ -13,6 +13,7 @@
     ./flash.nix
     ./ts-autotag.nix
     ./treesj.nix
+    ./undotree.nix
   ];
 }
 

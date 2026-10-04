@@ -14,8 +14,12 @@
     fzf
     zoxide
     ripgrep
+    fd
     fastfetch
+    usql
     yt-dlp
+
+    nmap
 
     uv
 

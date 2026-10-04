@@ -9,4 +9,22 @@
       max_join_length = 512;
     };
   };
+
+  programs.nixvim.keymaps = 
+    [
+
+      {
+        mode = "n";
+        key = "<leader>m";
+        action = "<cmd>TSJToggle<CR>";
+        options.desc = "Toggle split/join";
+      }
+
+      {
+        mode = "v";
+        key = "<leader>m";
+        action = "<cmd>TSJToggle<CR>";
+        options.desc = "Toggle split/join";
+      }
+    ];
 }

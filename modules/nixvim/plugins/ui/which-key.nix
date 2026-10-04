@@ -10,18 +10,19 @@
       delay = 500;
 
       spec = [
-        { 
-          __unkeyed-1 = "<leader>b";
-          group = "Buffers";
-        }
         {
-          __unkeyed-2 = "<leader>f";
+          __unkeyed-1 = "<leader>f";
           group = "Telescope";
         }
         { 
-          __unkeyed-3 = "<leader>h";
+          __unkeyed-2 = "<leader>h";
           group = "Harpoon";
         }
+        # disabled
+        # { 
+        #   __unkeyed-3 = "<leader>b";
+        #   group = "Buffers";
+        # }
       ];
     };
   };

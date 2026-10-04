@@ -1,25 +1,40 @@
 { ... }:
 
 {
+  programs.nixvim.autoCmd = [
     # Autosave
-    programs.nixvim.autoCmd = [
     {
-        event = [ "CursorHold" "CursorHoldI" ];
-        pattern = "*";
-        callback = {
+      event = [ "CursorHold" "CursorHoldI" ];
+      pattern = "*";
+      callback = {
         __raw = ''
-            function()
+          function()
             if vim.bo.modified and vim.bo.buftype == "" then
-                vim.cmd("silent! update")
+              vim.cmd("silent! update")
             end
-            end
-        '';
-        };
+          end
+          '';
+      };
     }
+
     {
-        event = [ "FocusLost" ];
-        pattern = "*";
-        command = "silent! wall";
+      event = [ "FocusLost" ];
+      pattern = "*";
+      command = "silent! wall";
     }
-    ];
+
+    # Conceal Level for Obsidian Nvim
+    {
+      event = [ "FileType" ];
+      pattern = [ "markdown" ];
+      command = "setlocal conceallevel=2";
+    }
+
+    # Autoread from disk
+    {
+      event = [ "FocusGained" "BufEnter" "CursorHold" "CursorHoldI" ];
+      pattern = "*";
+      command = "checktime";
+    }
+  ];
 }

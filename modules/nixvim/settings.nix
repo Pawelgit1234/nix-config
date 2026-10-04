@@ -17,7 +17,8 @@
       ruler = false;
       laststatus = 3;
 
-      conceallevel = 2;
+      conceallevel = 0;
+      autoread = true;
 
       number = true;
       relativenumber = true;
