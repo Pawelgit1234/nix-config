@@ -62,6 +62,14 @@
       # Powerlevel10k
       source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
       source ~/.p10k.zsh
+
+      # tmux-sessionizer
+      tmux-sessionizer-widget() {
+        bash ${./../scripts/tmux-sessionizer.bash}
+        zle reset-prompt
+      }
+      zle -N tmux-sessionizer-widget
+      bindkey '^F' tmux-sessionizer-widget
     '';
   };
 
