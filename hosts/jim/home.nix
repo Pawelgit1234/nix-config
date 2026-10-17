@@ -17,11 +17,15 @@
     fd
     fastfetch
     usql
+    p7zip
     yt-dlp
 
     nmap
 
     uv
+
+    rustc
+    cargo
 
     ruff
     rustfmt

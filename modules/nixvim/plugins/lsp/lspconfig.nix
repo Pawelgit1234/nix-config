@@ -46,6 +46,13 @@
 
     {
       mode = "n";
+      key = "<leader>cq";
+      action = "<cmd>cclose<CR>";
+      options.desc = "Close quickfix";
+    }
+
+    {
+      mode = "n";
       key = "gD";
       action = "<cmd>lua vim.lsp.buf.declaration()<CR>";
       options.desc = "Go to declaration";

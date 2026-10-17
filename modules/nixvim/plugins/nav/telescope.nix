@@ -154,7 +154,7 @@
 
     {
       mode = "n";
-      key = "<leader>fl";
+      key = "<leader>fC";
       action = "<cmd>Telescope git_commits<CR>";
       options.desc = "Git commits";
     }
