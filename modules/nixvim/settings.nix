@@ -46,7 +46,7 @@
 
       scrolloff = 8;
 
-      colorcolumn = "79";
+      colorcolumn = "88";
 
       mouse = "";
     };
