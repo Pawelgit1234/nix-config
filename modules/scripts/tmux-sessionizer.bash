@@ -24,17 +24,25 @@ fi
 selected=$(realpath "$selected")
 selected_name=$(basename "$selected" | tr '.' '_')
 
-if [[ -z "${TMUX:-}" ]]; then
-    if tmux has-session -t "=$selected_name" 2>/dev/null; then
-        exec tmux attach-session -t "=$selected_name"
-    else
-        exec tmux new-session -s "$selected_name" -c "$selected"
-    fi
-fi
-
 if ! tmux has-session -t "=$selected_name" 2>/dev/null; then
-    tmux new-session -d -s "$selected_name" -c "$selected"
+    # Window 1: Neovim.
+    tmux new-session -d \
+        -s "$selected_name" \
+        -c "$selected" \
+        -n "nvim" \
+        "nvim"
+
+    # Window 2: zsh.
+    tmux new-window \
+        -d \
+        -t "=$selected_name" \
+        -n "zsh" \
+        -c "$selected"
 fi
 
-exec tmux switch-client -t "=$selected_name"
-
+# Connect to the selected session.
+if [[ -n "${TMUX:-}" ]]; then
+    exec tmux switch-client -t "=$selected_name"
+else
+    exec tmux attach-session -t "=$selected_name"
+fi
