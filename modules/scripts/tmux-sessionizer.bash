@@ -25,14 +25,14 @@ selected=$(realpath "$selected")
 selected_name=$(basename "$selected" | tr '.' '_')
 
 if ! tmux has-session -t "=$selected_name" 2>/dev/null; then
-    # Window 1: Neovim.
+    # Window 1: Neovim
     tmux new-session -d \
         -s "$selected_name" \
         -c "$selected" \
         -n "nvim" \
         "nvim"
 
-    # Window 2: zsh.
+    # Window 2: zsh
     tmux new-window \
         -d \
         -t "=$selected_name" \

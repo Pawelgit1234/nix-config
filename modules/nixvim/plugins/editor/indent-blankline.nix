@@ -2,7 +2,7 @@
 
 {
   programs.nixvim.plugins.indent-blankline = {
-    enable = true;
+    enable = false; # disabled
 
     settings = {
       scope = {

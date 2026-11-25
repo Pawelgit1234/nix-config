@@ -28,6 +28,16 @@
     };
 
     initContent = ''
+      # CUDA
+      export CUDA_PATH=/usr/local/cuda-13.1
+      export PATH=$CUDA_PATH/bin:$PATH
+      export LD_LIBRARY_PATH=$CUDA_PATH/lib64:$LD_LIBRARY_PATH
+
+      export PATH="/home/jim/.local/bin:$PATH"
+
+      # Handy
+      export PATH="$PATH:$HOME/Applications/"
+
       # History
       setopt appendhistory
       setopt hist_ignore_all_dups

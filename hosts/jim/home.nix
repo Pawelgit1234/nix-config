@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   home.username = "jim";
@@ -7,6 +7,9 @@
   programs.home-manager.enable = true;
 
   home.packages = with pkgs; [
+    jdk
+    maven
+
     jetbrains-mono
     nerd-fonts.jetbrains-mono
 
@@ -19,15 +22,17 @@
     usql
     p7zip
     yt-dlp
+    htop
+    btop
 
     nmap
 
     uv
+    ruff
 
     rustc
     cargo
 
-    ruff
     rustfmt
     prettier
     clang-tools
