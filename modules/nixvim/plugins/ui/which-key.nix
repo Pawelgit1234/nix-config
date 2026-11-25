@@ -18,11 +18,6 @@
           __unkeyed-2 = "<leader>h";
           group = "Harpoon";
         }
-        # disabled
-        # { 
-        #   __unkeyed-3 = "<leader>b";
-        #   group = "Buffers";
-        # }
       ];
     };
   };
