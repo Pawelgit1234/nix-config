@@ -9,6 +9,26 @@
 
       popup_border_style = "rounded";
 
+      default_component_configs = {
+        icon.enabled = false;
+
+        name = {
+          trailing_slash = true;
+        };
+
+        git_status.symbols = {
+          added = "A";
+          modified = "M";
+          deleted = "D";
+          renamed = "R";
+          untracked = "K";
+          ignored = "I";
+          unstaged = "G";
+          staged = "S";
+          conflict = "C";
+        };
+      };
+
       filesystem = {
         follow_current_file = {
           enabled = true;

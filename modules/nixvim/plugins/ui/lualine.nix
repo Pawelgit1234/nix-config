@@ -2,7 +2,7 @@
 
 {
   programs.nixvim.plugins.lualine = {
-    enable = true;
+    enable = false; # disabled
 
     settings = {
       options = {

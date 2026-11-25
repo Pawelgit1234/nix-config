@@ -27,19 +27,16 @@
           {
             action = "Telescope find_files";
             desc = "Find File";
-            icon = "   ";
             key = "f";
           }
           {
             action = "Telescope oldfiles";
             desc = "Recent Files";
-            icon = "   ";
             key = "r";
           }
           {
             action = "qa";
             desc = "Quit";
-            icon = "󰩈   ";
             key = "q";
           }
         ];

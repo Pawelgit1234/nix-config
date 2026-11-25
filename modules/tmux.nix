@@ -30,8 +30,8 @@
       set -g status-left '[#S] '
       set -g status-right '%H:%M '
 
-      set -agF status-right "#{E:@catppuccin_status_cpu}"
-      set -ag status-right "#{E:@catppuccin_status_uptime}"
+      set -ag status-right "CPU: #{cpu_percentage} "
+      set -ag status-right "RAM: #{ram_percentage} "
 
       run-shell ${pkgs.tmuxPlugins.cpu}/share/tmux-plugins/cpu/cpu.tmux
 
